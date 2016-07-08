@@ -13,14 +13,23 @@
     </head>
     <body>
         <!-- Load Facebook SDK for JavaScript -->
-	    <div id="fb-root"></div>
-	         <script>(function(d, s, id) {
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '1749112952031157',
+            xfbml      : true,
+            version    : 'v2.6'
+            });
+        };
+
+        (function(d, s, id){
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
+            if (d.getElementById(id)) {return;}
             js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+            js.src = "//connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
 
         <div id="fb-root"></div>
             <script>(function(d, s, id) {
@@ -46,18 +55,12 @@
             <h1>Main Page</h1>
             <p>Body Text</p>
             Testing Integration Framework
+            <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+            </div>
         </div>
-        
-        
-
-	    <!-- Your like button code -->
-	    <div class="fb-like" 
-		data-href="http://www.your-domain.com/your-page.html" 
-		data-layout="standard" 
-		data-action="like" 
-		data-show-faces="true">
-	    </div>
-        <div class="fb-like" data-href="http://callum-sinclair01.azurewebsites.net/" data-width="10px" data-layout="standard" 
-        data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
     </body>
 </html>
