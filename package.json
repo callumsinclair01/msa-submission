@@ -1,0 +1,28 @@
+{
+  "name": "msa-submission",
+  "version": "1.0.0",
+  "description": "MSA Module Two Submission",
+  "main": "index.js",
+  "scripts": {
+    "test": "runmsa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callumsinclair01/msa-submission.git"
+  },
+  "keywords": [
+    "Callum",
+    "Sinclair",
+    "MSA"
+  ],
+  "author": "Callum Sinclair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callumsinclair01/msa-submission/issues"
+  },
+  "homepage": "https://github.com/callumsinclair01/msa-submission#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}
