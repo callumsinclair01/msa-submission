@@ -1,3 +1,10 @@
 $('.input_form').on('submit', function() {
-    alert("I'm a form");
+    $.ajax({
+        url: "http://isithackday.com/arrpi.php",
+        text: document.getElementById("pirate_input")
+    })
+
+    .done(function() {
+        alert("Pirate message recieved")
+    })
 })
