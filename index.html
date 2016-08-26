@@ -4,47 +4,15 @@
        <title>Callum Sinclair</title>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Boootstrap's CSS -->
+       <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!-- Own custom CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Josefin Slab Text Import -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <!-- Load Facebook SDK for JavaScript -->
-        <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-            appId      : '1749112952031157',
-            xfbml      : true,
-            version    : 'v2.6'
-            });
-        };
-
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        </script>
-
         <div id="wrap">
-            <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-                fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -62,17 +30,18 @@
                 <h1>Main Page</h1>
                 <p>Body Text</p>
                 Testing Integration Framework
+                <form>
+                    Input:<br>
+                    <input type="text" name="input"><br>
+                </form>
             </div>
         </div>
-        <div id="footer">
-            <div class="containter">
-                <div
-                    class="fb-like"
-                    data-share="true"
-                    data-width="450"
-                    data-show-faces="true">
-                </div>
-            </div>
-        </div>
+
+        <!--jQuery Script-->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <!--Bootstrap Script-->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--Custom Script-->
+        <script src="./js/main.js"></script>
     </body>
 </html>
