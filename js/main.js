@@ -1,9 +1,22 @@
-$('.input_form').on('submit', function() {
+btn.on("click", function() {
+    getPirateText("Hello")
+});
+
+
+function getPirateText(userText) {
     $.ajax({
         url: "http://isithackday.com/arrpi.php",
-        text: document.getElementById("pirate_input")
-    })
+        beforeSend: function(xhrObj) {
+            //Request headers
+        },
+        text: userText,
 
-    alert(document.getElementById("pirate_input"))
-    alert("Please work")
-})
+    })
+        .done(function(text) {
+            alert("Return text is: " + text)
+        })
+
+        .fail(function(error) {
+            alert("Didn't work!")
+        });
+}
