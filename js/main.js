@@ -1,23 +1,11 @@
-btn.on("click", function() {
-    getPirateText("Hello")
-    alert("Button Pressed")
-});
+function getQuote() {
+    //Request the Quote from API
+    var xmlhr = new XMLHttpRequest();
+    xmlhr.open("POST", "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=" + 'famous' , false)
+    xmlhr.setRequestHeader("X-Mashape-Authorization", "vypKENl7ubmsh97NGJPiBsx5IHD1p1M4ybnjsnnalfLTpMVBX0");
+    xmlhr.send();
 
+    var quoteResponce = xmlhr.responseText;
 
-function getPirateText(userText) {
-    $.ajax({
-        url: "http://isithackday.com/arrpi.php",
-        beforeSend: function(xhrObj) {
-            //Request headers
-        },
-        text: userText,
-
-    })
-        .done(function(text) {
-            alert("Return text is: " + text)
-        })
-
-        .fail(function(error) {
-            alert("Didn't work!")
-        });
-}
+    document.getElementById("quote-to-change").innerHTML = result;
+};
