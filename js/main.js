@@ -1,5 +1,6 @@
 btn.on("click", function() {
     getPirateText("Hello")
+    alert("Button Pressed")
 });
 
 
