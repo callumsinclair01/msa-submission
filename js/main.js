@@ -7,5 +7,7 @@ function getQuote() {
 
     var quoteResponce = xmlhr.responseText;
 
+    alert("This works")
+
     document.getElementById("quote-to-change").innerHTML = result;
 };
