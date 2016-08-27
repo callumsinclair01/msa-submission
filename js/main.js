@@ -4,7 +4,6 @@ $('.input_form').on('submit', function() {
         text: document.getElementById("pirate_input")
     })
 
-    .done(function() {
-        alert("Pirate message recieved")
-    })
+    alert(document.getElementById("pirate_input"))
+    alert("Please work")
 })
