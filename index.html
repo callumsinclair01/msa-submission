@@ -1,7 +1,11 @@
+<!-- MSA Module Two Submission
+    Author: Callum Sinclair
+    Date: 28/08/16 -->
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
-       <title>Callum Sinclair</title>
+       <title>Be Inspired</title>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Boootstrap's CSS -->
@@ -10,27 +14,39 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Josefin Slab Text Import -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+        <script type="text/javascript">
+            var appInsights=window.appInsights||function(config){
+                function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;s.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(s);try{t.cookie=u.cookie}catch(h){}for(t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Dependency"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+                }({
+                    instrumentationKey:"3546e9cd-d97c-4532-83f9-07ac542a09b9"
+                });
+                
+                window.appInsights=appInsights;
+                appInsights.trackPageView();
+</script>
         <!--Custom JavaScript File-->
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
 
-        <!-- Erased all formatting of webpage for now -->
+        <div class="container-fluid text-center">
+            <h1>Feeling uninspired</h1>
+            <br />
+            How about a random quote
+            <br />
+            <button type="button" id="btn1" onclick=getQuote("movies")>Movie Quotes</button>
+            <br />
+            <button type="button" id="btn2" onclick=getQuote("famous")>Famous Quotes</button>
+            <p id="quote-to-change">Default quote to change</p>
 
-        <h1>Feeling uninspired</h1>
-        <br />
-        How about a random quote
-        <br />
-        <button type="button" id="btn" onclick=getQuote()>Please Press</button>
+            <br />
 
-        <p id="quote-to-change">Default quote to change</p>
+            <p id="image_placement"> </p>
 
-        <br />
+            <p style="clear: both">;
 
-        <p id="first_image_placement"> </p>
-        <p id="second_image_placement"> </p>
-        <p id="third_image_placement"> </p>
-
+        </div>
         <!--jQuery Script-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <!--Bootstrap Script-->

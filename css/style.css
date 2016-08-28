@@ -1,3 +1,10 @@
 body {
     font-family: 'Josefin Slab', serif;
+    background-color: #1abc9c;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    padding-bottom: 10px;
 }

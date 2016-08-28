@@ -1,4 +1,4 @@
-function getQuote() {
+function getQuote(quoteParam) {
     //Request the Quote from API
     var xmlhr = new XMLHttpRequest();
     xmlhr.open("POST", "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=" + 'movies' , false);
@@ -40,9 +40,7 @@ function getImage(searchParam) {
         var secondImage = secondImageObject["thumbnailUrl"];
         var thirdImage = thirdImageObject["thumbnailUrl"];
 
-        document.getElementById("first_image_placement").innerHTML = "<img src=" + firstImage + " />";
-        document.getElementById("second_image_placement").innerHTML = "<img src=" + secondImage + " />";
-        document.getElementById("third_image_placement").innerHTML = "<img src=" + thirdImage + " />";
+        document.getElementById("image_placement").innerHTML = "<img src=" + firstImage + " class=\"center-block img-responsive\" /> <img src=" + secondImage + " class=\"center-block img-responsive\" /> <img src=" + thirdImage + " class=\"center-block\" />";
         
     })
     .fail(function() {
