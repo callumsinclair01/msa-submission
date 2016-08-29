@@ -30,26 +30,32 @@
     </head>
     <body>
 
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center bg">
             <h1>Feeling uninspired</h1>
+        </div>
+        <div class="container-fluid text-center bg1">
+            How about a quote:
             <br />
-            How about a random quote
+            <button type="button" onclick=getQuote("movies")>Movie Quotes</button>
             <br />
-            <button type="button" id="btn1" onclick=getQuote("movies")>Movie Quotes</button>
-            <br />
-            <button type="button" id="btn2" onclick=getQuote("famous")>Famous Quotes</button>
-            <p id="quote-to-change">Default quote to change</p>
+            <button type="button" onclick=getQuote("famous")>Famous Quotes</button>
+            <h3 id="quote-to-change"></h3>
 
             <br />
 
             <p id="image_placement"> </p>
-
-            <p style="clear: both">;
-
         </div>
+
+        <footer class="container-fluid text-center bg2">
+            MSA Module Two Website
+            <br />
+            Authored by Callum Sinclair.
+            <br />
+            August 2016
+        </footer>
         <!--jQuery Script-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <!--Bootstrap Script-->
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    </body>
+    </body>s
 </html>

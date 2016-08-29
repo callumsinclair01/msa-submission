@@ -33,17 +33,15 @@ function getImage(searchParam) {
         var imageArray = data["value"];
         //Get the three image objects
         var firstImageObject = imageArray[0];
-        var secondImageObject = imageArray[1];
-        var thirdImageObject = imageArray[2];
         //Get the thumbnails of image objects to display on page
         var firstImage = firstImageObject["thumbnailUrl"];
-        var secondImage = secondImageObject["thumbnailUrl"];
-        var thirdImage = thirdImageObject["thumbnailUrl"];
 
-        document.getElementById("image_placement").innerHTML = "<img src=" + firstImage + " class=\"center-block img-responsive\" /> <img src=" + secondImage + " class=\"center-block img-responsive\" /> <img src=" + thirdImage + " class=\"center-block\" />";
+        document.getElementById("image_placement").innerHTML = "<img src=" + firstImage + " class=\"center-block img-responsive\" />";
         
     })
     .fail(function() {
         alert("error");
     });
 };
+
+
