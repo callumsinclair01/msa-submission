@@ -15,6 +15,7 @@
         <!-- Josefin Slab Text Import -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 
+        <!-- Script to enable application insights -->
         <script type="text/javascript">
         var appInsights=window.appInsights||function(config){
             function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;s.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(s);try{t.cookie=u.cookie}catch(h){}for(t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Dependency"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
@@ -29,6 +30,14 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1749112952031157";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="container-fluid text-center bg">
             <h1>Feeling uninspired</h1>
@@ -52,6 +61,8 @@
             Authored by Callum Sinclair.
             <br />
             August 2016
+            <br />
+            <div class="fb-share-button" data-href="http://callum-sinclair01.azurewebsites.net/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcallum-sinclair01.azurewebsites.net%2F&amp;src=sdkpreparse">Share</a></div>
         </footer>
         <!--jQuery Script-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
