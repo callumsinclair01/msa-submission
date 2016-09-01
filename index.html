@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-       <title>Be Inspired</title>
+       <title>Callum Sinclair MSA Module Two</title>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Boootstrap's CSS -->
@@ -40,19 +40,23 @@
             }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="container-fluid text-center bg">
-            <h1>Feeling uninspired</h1>
+                <ul class="nav navbar-right navbar-nav">
+                    <li><a href="https://www.facebook.com/groups/msaccelerator/">MSA on Facebook</a></li>
+                    <li><a href="http://msa.ms/">Check Out MSA</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCCegNuS_AZjK-P3ZMN3JXNw">MSA on Youtube</a></li>
+                </ul>
         </div>
         <div class="container-fluid text-center bg1">
-            How about a quote:
+            <h1>Feeling uninspired?</h1>
+            <h3>How about a quote:</h3>
+            <p>Press one of the buttons below to be given a randomly generated quote, plus image </p>
+            <button type="button" class="movie" onclick=getQuote("movies")>Movie Quotes</button> <button type="button" class="famous" onclick=getQuote("famous")>Famous Quotes</button>
             <br />
-            <button type="button" onclick=getQuote("movies")>Movie Quotes</button>
+            <p id="quote-to-change" class="quotetext"></p>
             <br />
-            <button type="button" onclick=getQuote("famous")>Famous Quotes</button>
-            <h3 id="quote-to-change"></h3>
-
+            <p id="image_placement"></p>
             <br />
-
-            <p id="image_placement"> </p>
+            <p>NB: Image is drawn from bing image search api taking the most popular image and may not necessarily relate to the person or movie who said the quote</p>
         </div>
 
         <footer class="container-fluid text-center bg2">
@@ -62,8 +66,10 @@
             <br />
             August 2016
             <br />
+            <a class="footerlink" href="https://github.com/callumsinclair01/msa-submission">GitHub Link</a>
+            <br />
             <div class="fb-share-button" data-href="http://callum-sinclair01.azurewebsites.net/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcallum-sinclair01.azurewebsites.net%2F&amp;src=sdkpreparse">Share</a></div>
-            <p></p>
+            <br />
         </footer>
         <!--jQuery Script-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>

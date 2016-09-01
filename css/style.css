@@ -9,22 +9,30 @@ img {
 
 
 button {
-    background-color: white;
     color: black;
     border: 2px solid black;
     margin: 5px 0px;
     width: 120px;
 }
 
+.famous {
+    background-color:lightsalmon;
+}
+
+.movie {
+    background-color: lightblue;
+}
+
 .bg, .bg2 {
-    background-color: black;
-    color: white;
+    background-color: #f2f2f2;;
+    color: black;
     max-height: auto;
     width: 100%;
 }
 
 .bg {
     margin-bottom: 20px;
+    border-bottom: 1px solid black;
 }
 
 .bg1 {
@@ -35,6 +43,15 @@ button {
 }
 
 .bg2 {
+    border-top: 1px solid black;
     bottom: 0%;
-    position: fixed;
+    position: absolute;
+}
+
+.footerlink {
+    color: black;
+}
+
+.quotetext {
+    font-size: 18px;;
 }
